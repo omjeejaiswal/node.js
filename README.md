@@ -57,7 +57,7 @@ HTTP status codes are divided into five categories, each represented by the firs
 - **305 Use Proxy (deprecated)**: The requested resource is available only through a proxy, the address for which is provided in the response.
 - **306 Switch Proxy (unused)**: No longer used, but the code is reserved.
 - **307 Temporary Redirect**: informs your browser that the requested content is temporarily located in another place
-- **308 Permanent Redirect**: The request and all future requests should be repeated using another URI.
+- **308 Permanent Redirect**: tells browsers and search engines that a resource has permanently moved to a new URL
 
 ## Difference between 302 vs 307 for Temporary Redirects?
 A 302 redirect lets browsers use a different request from the original request. Whereas a 307 redirect requires the same request method for both the original request and the redirect.
