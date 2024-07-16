@@ -205,3 +205,26 @@ The authentication and encryption mechanisms prevent attackers from intercepting
 Forward Secrecy:
 
 Many modern HTTPS implementations use a feature called forward secrecy, which ensures that session keys are not compromised even if the server’s private key is compromised in the future. This is achieved by generating unique session keys for each session that are not derived from the server’s private key.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
