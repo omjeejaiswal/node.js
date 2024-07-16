@@ -67,7 +67,7 @@ This means that with a 302 redirect, visitors may use POST requests on the origi
 
 ## 4xx: Client Errors
 - **400 Bad Request**: The server cannot or will not process the request due to an apparent client error.
-- **401 Unauthorized**: Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided.
+- **401 Unauthorized**: Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided. or the client request has not been completed because it lacks valid authentication credentials for the requested resource.
 - **402 Payment Required**: Reserved for future use.
 - **403 Forbidden**: The request was valid, but the server is refusing action. The user might not have the necessary permissions for a resource.
 - **404 Not Found**: The requested resource could not be found but may be available in the future.
