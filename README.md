@@ -185,3 +185,23 @@ SSL (Secure Sockets Layer) or TLS (Transport Layer Security), are cryptographic 
 When a user connects to an HTTPS-secured server, the website sends its SSL certificate to the user’s browser. This certificate contains the public key needed to start the secure session. The two systems then go through a process called an SSL handshake, which establishes a secure connection between them.
 
 This entire process ensures that any data transferred between the user and the site is encrypted and cannot be read by anyone else, making HTTPS secure.
+
+## Why HTTPS is Considered Secure
+Encryption:
+
+HTTPS uses strong encryption algorithms (such as AES) to encrypt the data transmitted between the client and server. This prevents eavesdroppers from reading the data as it travels across the network.
+Authentication:
+
+The server’s certificate, issued by a trusted CA, authenticates the server’s identity. This ensures that the client is communicating with the legitimate server and not an imposter (protects against man-in-the-middle attacks).
+Data Integrity:
+
+HTTPS uses cryptographic hash functions and MACs to ensure data integrity. Any alteration of data during transit can be detected, preventing tampering.
+Confidentiality:
+
+The use of symmetric session keys for encryption ensures that even if someone intercepts the encrypted data, they cannot decrypt it without the session key.
+Protection against Man-in-the-Middle Attacks:
+
+The authentication and encryption mechanisms prevent attackers from intercepting, altering, or forging messages between the client and server.
+Forward Secrecy:
+
+Many modern HTTPS implementations use a feature called forward secrecy, which ensures that session keys are not compromised even if the server’s private key is compromised in the future. This is achieved by generating unique session keys for each session that are not derived from the server’s private key.
