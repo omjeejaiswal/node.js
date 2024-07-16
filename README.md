@@ -173,3 +173,15 @@ Response Header Fields or a series of HTTP headers
 3Message Body
 ## What is HTTP Security?
 HTTP is used to communicate over the internet, so users, information providers, and application developers should be aware of the limitations of security in HTTP/1.1. There are two methods to establish a secure HTTP connection: https URI scheme and the HTTP/1.1 Upgrade header.
+
+
+## Can you explain how HTTPS works and why it’s considered secure?.
+HTTPS, short for Hypertext Transfer Protocol Secure, is a protocol used for secure communication over a computer network. It uses encryption to ensure data integrity and confidentiality. HTTPS operates through two main protocols: HTTP and SSL/TLS.
+
+HTTP functions as the application protocol to transfer information on the web. However, it lacks security features which can expose data to potential threats. This is where SSL/TLS comes in.
+
+SSL (Secure Sockets Layer) or TLS (Transport Layer Security), are cryptographic protocols that provide communications security over a network. They use asymmetric cryptography for authentication, symmetric encryption for confidentiality, and message authentication codes for message integrity.
+
+When a user connects to an HTTPS-secured server, the website sends its SSL certificate to the user’s browser. This certificate contains the public key needed to start the secure session. The two systems then go through a process called an SSL handshake, which establishes a secure connection between them.
+
+This entire process ensures that any data transferred between the user and the site is encrypted and cannot be read by anyone else, making HTTPS secure.
