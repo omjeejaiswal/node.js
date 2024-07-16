@@ -481,7 +481,10 @@ It takes the request from the user and gives the response without exposing the i
 ##  What is API Testing?
 API testing is a type of software testing that aims to test the API directly and as a part of integration testing to determine if it meets the expectations for functionality, performance, and security. It aims to analyze multiple endpoints such as databases, web services, etc.
 
-
+##  How do APIs work?
+API takes requests from the user.
+It processes the request which may involve data validation, data processing, database interaction, etc.
+The response is sent back to the source.
 
 
 
