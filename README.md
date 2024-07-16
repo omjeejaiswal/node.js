@@ -51,14 +51,18 @@ HTTP status codes are divided into five categories, each represented by the firs
 ## 3xx: Redirection
 - **300 Multiple Choices**: Indicates multiple options for the resource that the client may follow.
 - **301 Moved Permanently**: This and all future requests should be directed to the given URI.
-- **302 Found**: Tells the client to look at (browse to) another URL.
-- **303 See Other**: The response to the request can be found under another URI using a GET method.
-- **304 Not Modified**: Indicates that the resource has not been modified since the version specified by the request headers.
+- **302 Found**: 302 Found redirect status response code indicates that the resource requested has been temporarily moved to the URL given by the Location header
+- **303 See Other**: a response indicating that the requested resource has been moved to a new location and the client should make a new request to that location.
+- **304 Not Modified**:  the requested resource has not been modified since the last time it was loaded, and there's no need to transfer it again
 - **305 Use Proxy (deprecated)**: The requested resource is available only through a proxy, the address for which is provided in the response.
 - **306 Switch Proxy (unused)**: No longer used, but the code is reserved.
-- **307 Temporary Redirect**: The request should be repeated with another URI; however, future requests should still use the original URI.
+- **307 Temporary Redirect**: informs your browser that the requested content is temporarily located in another place
 - **308 Permanent Redirect**: The request and all future requests should be repeated using another URI.
 
+## Difference between 302 vs 307 for Temporary Redirects?
+A 302 redirect lets browsers use a different request from the original request. Whereas a 307 redirect requires the same request method for both the original request and the redirect.
+
+This means that with a 302 redirect, visitors may use POST requests on the original page, and they can switch to GET method on the redirected page. On the other hand, a 307 redirect would force them to keep using POST.
 
 
 ## 4xx: Client Errors
