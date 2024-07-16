@@ -32,6 +32,8 @@ HTTP status codes are divided into five categories, each represented by the firs
 - **102 Processing (WebDAV)**: The server has received and is processing the request, but no response is available yet.
 - **103 Early Hints**: Used to return some response headers before final HTTP message.
 
+
+
 ## 2xx: Success
 - **200 OK**: The request has succeeded.
 - **201 Created**: The request has been fulfilled and resulted in a new resource being created.
@@ -44,6 +46,8 @@ HTTP status codes are divided into five categories, each represented by the firs
 - **208 Already Reported (WebDAV)**: The members of a DAV binding have already been enumerated in a previous reply to this request and are not being included again.
 - **226 IM Used**: The server has fulfilled a request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
 
+
+
 ## 3xx: Redirection
 - **300 Multiple Choices**: Indicates multiple options for the resource that the client may follow.
 - **301 Moved Permanently**: This and all future requests should be directed to the given URI.
@@ -54,6 +58,8 @@ HTTP status codes are divided into five categories, each represented by the firs
 - **306 Switch Proxy (unused)**: No longer used, but the code is reserved.
 - **307 Temporary Redirect**: The request should be repeated with another URI; however, future requests should still use the original URI.
 - **308 Permanent Redirect**: The request and all future requests should be repeated using another URI.
+
+
 
 ## 4xx: Client Errors
 - **400 Bad Request**: The server cannot or will not process the request due to an apparent client error.
@@ -85,6 +91,8 @@ HTTP status codes are divided into five categories, each represented by the firs
 - **429 Too Many Requests**: The user has sent too many requests in a given amount of time ("rate limiting").
 - **431 Request Header Fields Too Large**: The server is unwilling to process the request because either an individual header field, or all the header fields collectively, are too large.
 - **451 Unavailable For Legal Reasons**: The server is denying access to the resource as a consequence of a legal demand.
+
+
 
 ## 5xx: Server Errors
 - **500 Internal Server Error**: A generic error message, given when an unexpected condition was encountered and no more specific message is suitable.
