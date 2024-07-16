@@ -1,5 +1,29 @@
 # Project Information
 
+## Question 1: What is package.json file?
+The `package.json` file stores the details of our project related to coding such as:
+- Project name
+- Version of the project
+- Git repository
+- Commands
+- List of installed packages
+
+
+## Question 2: Is Node.js single-threaded or multi-threaded?
+Node.js is single-threaded.
+
+## Question 3: Explain the difference between single-threaded and multi-threaded.
+- **Single-threaded**: Runs one command at a time.
+- **Multi-threaded**: Can run more than one command at a time.
+
+## Question 4: What will you do if the node_modules folder of your project is deleted?
+Just run the command `npm install` and it will recreate all the packages inside a `node_modules` folder that are listed inside the `package.json` file.
+
+## Question 5: Should we push the node_modules folder to GitHub?
+No, because the `node_modules` folder is very large and pushing it to GitHub can waste a lot of time. Instead, mention its path inside the `.gitignore` file and then push your code.
+
+
+
 ## What is HTTP?
 HTTP stands for Hypertext Transfer Protocol. It is a set of rule which is used for transferring the files like, audio, video, graphic image, text and other multimedia files on the WWW (World Wide Web). HTTP is a protocol that is used to transfer the hypertext from the client end to the server end, but HTTP does not have any security. Whenever a user opens their Web Browser, that means the user indirectly uses HTTP.
 
@@ -31,27 +55,6 @@ Request-Line = Method SP Request-URI SP HTTP-Version CRLF
 - **CONNECT** : The CONNECT method is used to establish a tunnel to the server, which is identified by a given URI.
 
 
-## Question 1: What is package.json file?
-The `package.json` file stores the details of our project related to coding such as:
-- Project name
-- Version of the project
-- Git repository
-- Commands
-- List of installed packages
-
-
-## Question 2: Is Node.js single-threaded or multi-threaded?
-Node.js is single-threaded.
-
-## Question 3: Explain the difference between single-threaded and multi-threaded.
-- **Single-threaded**: Runs one command at a time.
-- **Multi-threaded**: Can run more than one command at a time.
-
-## Question 4: What will you do if the node_modules folder of your project is deleted?
-Just run the command `npm install` and it will recreate all the packages inside a `node_modules` folder that are listed inside the `package.json` file.
-
-## Question 5: Should we push the node_modules folder to GitHub?
-No, because the `node_modules` folder is very large and pushing it to GitHub can waste a lot of time. Instead, mention its path inside the `.gitignore` file and then push your code.
 
 ## What is the Status Code?
 The Server issues an HTTP Status Code in response to a request of the client made to the server. Status code is a 3-digit integer. The first digit of status code is used to specify one of five standard classes of responses. The last two digits of status code do not have any categorization role.
