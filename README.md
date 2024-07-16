@@ -1,5 +1,36 @@
 # Project Information
 
+## What is HTTP?
+HTTP stands for Hypertext Transfer Protocol. It is a set of rule which is used for transferring the files like, audio, video, graphic image, text and other multimedia files on the WWW (World Wide Web). HTTP is a protocol that is used to transfer the hypertext from the client end to the server end, but HTTP does not have any security. Whenever a user opens their Web Browser, that means the user indirectly uses HTTP.
+
+## What are HTTP Request Messages?
+HTTP Requests are messages which are sent by the client or user to initiate an action on the server.
+
+It consists of various things:
+
+- **a**. Request Line: The Request-Line starts with a method token, which is followed by the Request-URI, the protocol version, and ending with CRLF. Using the SP characters, the elements are separated.
+
+Syntax
+
+Request-Line = Method SP Request-URI SP HTTP-Version CRLF  
+- **b**. The Resource Identified by a Request:
+
+- **c**. Request Header Fields:The request-header fields are used to allow the client to pass additional information to the server like the request and the client itself. The request header fields act as request modifiers, with semantics equivalent to the parameters on a programming language method invocation.
+
+## What are HTTP Request Methods?
+- **GET** : This method retrieves information from the given server using a given URI. GET request can retrieve the data. It cannot apply other effects on the data.
+
+**HEAD** : The HEAD method is the same as the GET method. It is used to transfer the status line and header section only.
+
+- **POST** : The POST request sends the data to the server. For example, file upload, customer information, etc. using the HTML forms.
+
+- **PUT** : The PUT method is used to replace all the current representations of the target resource with the uploaded content.
+
+- **DELETE** : The DELETE method is used to remove all the current representations of the target resource, which is given by URI.
+
+- **CONNECT** : The CONNECT method is used to establish a tunnel to the server, which is identified by a given URI.
+
+
 ## Question 1: What is package.json file?
 The `package.json` file stores the details of our project related to coding such as:
 - Project name
@@ -21,6 +52,10 @@ Just run the command `npm install` and it will recreate all the packages inside 
 
 ## Question 5: Should we push the node_modules folder to GitHub?
 No, because the `node_modules` folder is very large and pushing it to GitHub can waste a lot of time. Instead, mention its path inside the `.gitignore` file and then push your code.
+
+## What is the Status Code?
+The Server issues an HTTP Status Code in response to a request of the client made to the server. Status code is a 3-digit integer. The first digit of status code is used to specify one of five standard classes of responses. The last two digits of status code do not have any categorization role.
+
 
 # HTTP Status Codes
 
@@ -111,3 +146,30 @@ or A 404 status code only indicates that the resource is missing: not whether th
 - **508 Loop Detected (WebDAV)**: The server detected an infinite loop while processing a request.
 - **510 Not Extended**: Further extensions to the request are required for the server to fulfill it.
 - **511 Network Authentication Required**: The client needs to authenticate to gain network access.
+
+
+
+
+
+## What are Persistent Connections?
+In HTTP/1.0, the connection is closed after a single request or response pair. In HTTP/1.1, a mechanism was introduced, which is known as keep-alive-mechanism. In this mechanism, a connection could be reused for more than one request.
+
+## What is Session State in HTTP?
+Session state is also known as Stateless state. HTTP is a stateless protocol. In the session state, the client and server just know about each other only during the current request. If the connection is closed, and two computers want to connect again, they need to provide information to each other as a new connection, and the connection is handled as the very first one.
+
+## What is HTTP Message?
+HTTP Message is used to show how data is exchanged between the client and the server. It is based on a client-server architecture. An HTTP client is a program that establishes a connection to a server to send one or more HTTP request messages. An HTTP server is a program that accepts connections to serve HTTP requests by sending an HTTP response messages.
+
+## What is HTTP cURL?
+HTTP cURL is a command-line tool. It is available on all major operating systems
+
+## What is HTTP Response?
+HTTP Response sent by a server to the client. The response is used to provide the client with the resource it requested. It is also used to inform the client that the action requested has been carried out. It can also inform the client that an error occurred in processing its request.
+
+An HTTP response contains the following things:
+
+Status Line
+Response Header Fields or a series of HTTP headers
+3Message Body
+## What is HTTP Security?
+HTTP is used to communicate over the internet, so users, information providers, and application developers should be aware of the limitations of security in HTTP/1.1. There are two methods to establish a secure HTTP connection: https URI scheme and the HTTP/1.1 Upgrade header.
